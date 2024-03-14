@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -117,7 +118,7 @@ public class Main {
                     System.out.println("Opção inválida, digite um número que consta no MENU.");
                     break;
             }
-            
+
             System.out.println("Escolha uma opção: ");
             System.out.println("1 - Adição ");
             System.out.println("2 - Subtração ");
@@ -186,5 +187,41 @@ public class Main {
             System.out.println("3 - Sair ");
             option = scannner.nextInt();
         }*/
+
+        /*10 - Desenvolva um programa que permita ao usuário inserir itens em uma lista de compras.
+        O programa deve exibir a lista de compras atualizada após cada inserção e perguntar se o usuário
+        deseja adicionar mais itens. O programa deve continuar executando até que o usuário decida sair.*/
+
+        String item;
+        ArrayList<String> itens = new ArrayList<String>();
+
+        System.out.println("Escolha uma das opções:");
+        System.out.println("1 - Adicionar compras no carrinho");
+        System.out.println("2 - Consultar carrinho");
+        System.out.println("3 - Sair");
+        int option = scannner.nextInt();
+
+        while(option != 3){
+            switch (option){
+                case 1:
+                    System.out.println("Digite o nome do item: ");
+                    item = scannner.next();
+                    itens.add(item);
+                    break;
+                case 2:
+                    System.out.println("Lista atualizada: " +itens);
+                    break;
+                default:
+                    System.out.println("Opção inválida, digite um número que consta no MENU.");
+                    break;
+            }
+
+            System.out.println("Escolha uma das opções:");
+            System.out.println("1 - Adicionar compras no carrinho");
+            System.out.println("2 - Consultar carrinho");
+            System.out.println("3 - Sair");
+            option = scannner.nextInt();
+
+        }
     }
 }
