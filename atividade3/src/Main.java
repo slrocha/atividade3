@@ -45,11 +45,11 @@ public class Main {
             System.out.println("O número "+ number + " não é primo");
         }*/
 
-        /*5 - Implemente um algoritmo que exiba os primeiros 20 números da sequência de Fibonacci.*/
+        /*5 - Implemente um algoritmo que exiba os primeiros 20 números da sequência de Fibonacci.
 
         int k = 20;
         int[] fib_sequencia_inicial = new int[k];
-        fib_sequencia_inicial[0] = 0;
+        fib_sequencia_inicial[0] = 1;
         fib_sequencia_inicial[1] = 1;
 
         for (int i = 2; i < k; i++) {
@@ -59,6 +59,6 @@ public class Main {
         System.out.println("Os primeiros " + k + " números da sequência de Fibonacci são: \n ");
         for (int i = 0; i < k; i++) {
             System.out.print(fib_sequencia_inicial[i] + " ");
-        }
+        }*/
     }
 }
