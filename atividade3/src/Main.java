@@ -60,5 +60,25 @@ public class Main {
         for (int i = 0; i < k; i++) {
             System.out.print(fib_sequencia_inicial[i] + " ");
         }*/
+
+        /*6 - Faça um programa que solicite ao usuário números inteiros positivos. Quando o usuário digitar
+        um número negativo, o programa deve exibir a média dos números inseridos até aquele momento.*/
+
+        int cont= 0;
+        int i = 0;
+        int number;
+
+        System.out.println("Digite um número inteiro POSITIVO:");
+        number = scannner.nextInt();
+
+        while( number > 0) {
+            cont = cont + number;
+            System.out.println("Digite um número inteiro POSITIVO:");
+            number = scannner.nextInt();
+            i++;
+        }
+
+        System.out.println("A soma dos números inseridos é: " + (cont));
+        System.out.println("A média dos números inseridos é: " + (cont/i));
     }
 }
