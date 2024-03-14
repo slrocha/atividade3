@@ -24,7 +24,7 @@ public class Main {
             System.out.println(number + " x " +i + " = " + (number*i));
         }*/
 
-        /*3 - Desenvolva um algoritmo que calcule a soma dos números pares de 1 a 100.*/
+        /*3 - Desenvolva um algoritmo que calcule a soma dos números pares de 1 a 100.
 
         int par = 0;
         for(int i = 1; i <=100; i++){
@@ -32,6 +32,17 @@ public class Main {
                 par = par+i;
             }
         }
-        System.out.println("A soma dos números pares de 1 à 100 equivale à " +par);
+        System.out.println("A soma dos números pares de 1 à 100 equivale à " +par);*/
+
+        /*4 - Escreva um programa que verifique se um número digitado pelo usuário é primo ou não.
+
+        System.out.println("Digite um número: ");
+        int number = scannner.nextInt();
+
+        if(number%2 !=0 || number == 2){ //o número 2 é o unico numero par primo.
+            System.out.println("O número "+ number + " é primo");
+        } else {
+            System.out.println("O número "+ number + " não é primo");
+        }*/
     }
 }
