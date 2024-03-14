@@ -62,7 +62,7 @@ public class Main {
         }*/
 
         /*6 - Faça um programa que solicite ao usuário números inteiros positivos. Quando o usuário digitar
-        um número negativo, o programa deve exibir a média dos números inseridos até aquele momento.*/
+        um número negativo, o programa deve exibir a média dos números inseridos até aquele momento.
 
         int cont= 0;
         int i = 0;
@@ -79,6 +79,112 @@ public class Main {
         }
 
         System.out.println("A soma dos números inseridos é: " + (cont));
-        System.out.println("A média dos números inseridos é: " + (cont/i));
+        System.out.println("A média dos números inseridos é: " + (cont/i));*/
+
+        /*7 - Crie uma calculadora simples que permita ao usuário realizar operações de soma, subtração,
+        multiplicação e divisão entre dois números, utilizando um laço de repetição para continuar operando
+        até que o usuário decida sair.
+
+        System.out.println("Digite o PRIMEIRO número");
+        double a  = scannner.nextDouble();
+
+        System.out.println("Digite o SEGUNDO número");
+        double b  = scannner.nextDouble();
+
+        System.out.println("Escolha uma opção: ");
+        System.out.println("1 - Adição ");
+        System.out.println("2 - Subtração ");
+        System.out.println("3 - Multiplicação ");
+        System.out.println("4 - Divisão ");
+        System.out.println("5 - Sair ");
+        int option = scannner.nextInt();
+
+        while(option != 5 ){
+            switch (option){
+                case 1:
+                    System.out.println(a + " + " + b + " = " + (a+b));
+                    break;
+                case 2:
+                    System.out.println(a + " - " + b + " = " + (a-b));
+                    break;
+                case 3:
+                    System.out.println(a + " x " + b + " = " + (a*b));
+                    break;
+                case 4:
+                    System.out.println(a + " / " + b + " = " + (a/b));
+                    break;
+                default:
+                    System.out.println("Opção inválida, digite um número que consta no MENU.");
+                    break;
+            }
+            
+            System.out.println("Escolha uma opção: ");
+            System.out.println("1 - Adição ");
+            System.out.println("2 - Subtração ");
+            System.out.println("3 - Multiplicação ");
+            System.out.println("4 - Divisão ");
+            System.out.println("5 - Sair ");
+            option = scannner.nextInt();
+        }*/
+
+        /*8 - Implemente um jogo no qual o programa escolhe um número aleatório entre 1 e 100, e o
+        jogador deve tentar adivinhá-lo. O programa deve fornecer dicas do tipo "maior" ou "menor"
+        conforme necessário.
+
+        Random random = new Random();
+
+        int palpite = 0, numerodasorte = random.nextInt(10) + 1;
+
+        System.out.println(" Vamos iniciar o jogo");
+        System.out.println(" Voce deve acertar o numero que o robo esta pensando");
+
+        while(palpite != numerodasorte){
+            System.out.println("Digite um numero, vamos ver se voce acerta");
+            palpite = scannner.nextInt();
+            if(palpite == numerodasorte){
+                System.out.println("Parabenssssss voce acertou");
+                break;
+            }else{
+                if(palpite > numerodasorte){
+                    System.out.println("Tente um número menor");
+                } else{
+                    System.out.println("Tente um número maior");
+                }
+            }
+        } */
+
+        /*9 -  Escreva um programa que converta a temperatura de Celsius para Fahrenheit ou vice-versa,
+        solicitando ao usuário qual conversão deseja fazer. O programa deve continuar executando até que o
+        usuário decida sair.
+
+        System.out.println("Digite o valor da temperatura: ");
+        double temp = scannner.nextDouble();
+
+        System.out.println("Escolha a opção para qual deseja converter a tempertaruta");
+        System.out.println("1 - Celsius     ->  Fahrenheit");
+        System.out.println("2 - Fahrenheit  ->  Celsius");
+        System.out.println("3 - Sair ");
+        int option = scannner.nextInt();
+
+        while(option != 3){
+            switch (option){
+                case 1:
+                    temp = (temp*1.8)+32;
+                    System.out.println("Celsius -> Fahrenheit = " +temp );
+                    break;
+                case 2:
+                    temp = (temp-32)/1.8;
+                    System.out.println("Fahrenheit -> Celsius = " +temp );
+                    break;
+                default:
+                    System.out.println("Opção inválida, digite um número que consta no MENU.");
+                    break;
+            }
+            System.out.println("Escolha a opção para qual deseja converter a tempertaruta");
+            System.out.println("1 - Celsius     ->  Fahrenheit");
+            System.out.println("2 - Fahrenheit  ->  Celsius");
+            System.out.println("3 - Sair ");
+            option = scannner.nextInt();
+        }*/
     }
 }
