@@ -12,7 +12,7 @@ public class Main {
 
         for(int i=10; i >= 1; i--){
             System.out.println("Contagem regressiva... " +i);
-        }*/
+        }
 
         /*2 - Escreva um programa que solicite um número ao usuário e exiba a
         tabuada desse número de 1 a 10.
@@ -190,7 +190,7 @@ public class Main {
 
         /*10 - Desenvolva um programa que permita ao usuário inserir itens em uma lista de compras.
         O programa deve exibir a lista de compras atualizada após cada inserção e perguntar se o usuário
-        deseja adicionar mais itens. O programa deve continuar executando até que o usuário decida sair.*/
+        deseja adicionar mais itens. O programa deve continuar executando até que o usuário decida sair.
 
         String item;
         ArrayList<String> itens = new ArrayList<String>();
@@ -207,6 +207,7 @@ public class Main {
                     System.out.println("Digite o nome do item: ");
                     item = scannner.next();
                     itens.add(item);
+                    System.out.println("Lista atualizada: " +itens);
                     break;
                 case 2:
                     System.out.println("Lista atualizada: " +itens);
@@ -221,7 +222,6 @@ public class Main {
             System.out.println("2 - Consultar carrinho");
             System.out.println("3 - Sair");
             option = scannner.nextInt();
-
-        }
+        }*/
     }
 }
