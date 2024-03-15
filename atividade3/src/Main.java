@@ -12,7 +12,7 @@ public class Main {
 
         for(int i=10; i >= 1; i--){
             System.out.println("Contagem regressiva... " +i);
-        }
+        }*/
 
         /*2 - Escreva um programa que solicite um número ao usuário e exiba a
         tabuada desse número de 1 a 10.
@@ -21,6 +21,7 @@ public class Main {
         double number = scannner.nextDouble(); //considerando qualquer número, inclusive número reais.
 
         System.out.println("Tabuada do número " +number);
+
         for(int i=1; i <=10; i++){
             System.out.println(number + " x " +i + " = " + (number*i));
         }*/
@@ -82,6 +83,7 @@ public class Main {
         System.out.println("A soma dos números inseridos é: " + (cont));
         System.out.println("A média dos números inseridos é: " + (cont/i));*/
 
+
         /*7 - Crie uma calculadora simples que permita ao usuário realizar operações de soma, subtração,
         multiplicação e divisão entre dois números, utilizando um laço de repetição para continuar operando
         até que o usuário decida sair.
@@ -133,7 +135,6 @@ public class Main {
         conforme necessário.
 
         Random random = new Random();
-
         int palpite = 0, numerodasorte = random.nextInt(10) + 1;
 
         System.out.println(" Vamos iniciar o jogo");
@@ -171,11 +172,11 @@ public class Main {
             switch (option){
                 case 1:
                     temp = (temp*1.8)+32;
-                    System.out.println("Celsius -> Fahrenheit = " +temp );
+                    System.out.println("Celsius -> Fahrenheit = " +temp+ "°F" );
                     break;
                 case 2:
                     temp = (temp-32)/1.8;
-                    System.out.println("Fahrenheit -> Celsius = " +temp );
+                    System.out.println("Fahrenheit -> Celsius = " +temp + "°C");
                     break;
                 default:
                     System.out.println("Opção inválida, digite um número que consta no MENU.");
