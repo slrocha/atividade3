@@ -3,30 +3,28 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
 
-        Scanner scannner = new Scanner(System.in);
+    static Scanner scannner = new Scanner(System.in);
 
-        /*1 -Crie um programa que realize uma contagem regressiva de 10 até 1,
-        mostrando cada número na tela.
+    public static void contagemRegressiva(){
+         /* 1 -Crie um programa que realize uma contagem regressiva de 10 até 1, mostrando cada número na tela.*/
 
         for(int i=10; i >= 1; i--){
             System.out.println("Contagem regressiva... " +i);
-        }*/
+        }
+    }
 
-        /*2 - Escreva um programa que solicite um número ao usuário e exiba a
-        tabuada desse número de 1 a 10.
-
-        System.out.println("Digite um número: ");
-        double number = scannner.nextDouble(); //considerando qualquer número, inclusive número reais.
+    public static void tabuada(double number){
+         /*2 - Escreva um programa que solicite um número ao usuário e exiba a tabuada desse número de 1 a 10.*/
 
         System.out.println("Tabuada do número " +number);
-
         for(int i=1; i <=10; i++){
             System.out.println(number + " x " +i + " = " + (number*i));
-        }*/
+        }
+    }
 
-        /*3 - Desenvolva um algoritmo que calcule a soma dos números pares de 1 a 100.
+    public static void somaPares(){
+        /*3 - Desenvolva um algoritmo que calcule a soma dos números pares de 1 a 100.*/
 
         int par = 0;
         for(int i = 1; i <=100; i++){
@@ -34,20 +32,21 @@ public class Main {
                 par = par+i;
             }
         }
-        System.out.println("A soma dos números pares de 1 à 100 equivale à " +par);*/
+        System.out.println("A soma dos números pares de 1 à 100 equivale à " +par);
+    }
 
-        /*4 - Escreva um programa que verifique se um número digitado pelo usuário é primo ou não.
-
-        System.out.println("Digite um número: ");
-        int number = scannner.nextInt();
+    public static void numeroPrimo(int number){
+        /*4 - Escreva um programa que verifique se um número digitado pelo usuário é primo ou não.*/
 
         if(number%2 !=0 || number == 2){ //o número 2 é o unico numero par primo.
             System.out.println("O número "+ number + " é primo");
         } else {
             System.out.println("O número "+ number + " não é primo");
-        }*/
+        }
+    }
 
-        /*5 - Implemente um algoritmo que exiba os primeiros 20 números da sequência de Fibonacci.
+    public static void fibonacci(){
+        /*5 - Implemente um algoritmo que exiba os primeiros 20 números da sequência de Fibonacci.*/
 
         int k = 20;
         int[] fib_sequencia_inicial = new int[k];
@@ -61,19 +60,17 @@ public class Main {
         System.out.println("Os primeiros " + k + " números da sequência de Fibonacci são: \n ");
         for (int i = 0; i < k; i++) {
             System.out.print(fib_sequencia_inicial[i] + " ");
-        }*/
+        }
+    }
 
-        /*6 - Faça um programa que solicite ao usuário números inteiros positivos. Quando o usuário digitar
-        um número negativo, o programa deve exibir a média dos números inseridos até aquele momento.
+    public static void mediaPositivos(int number){
+         /*6 - Faça um programa que solicite ao usuário números inteiros positivos. Quando o usuário digitar
+        um número negativo, o programa deve exibir a média dos números inseridos até aquele momento.*/
 
         int cont= 0;
         int i = 0;
-        int number;
 
-        System.out.println("Digite um número inteiro POSITIVO:");
-        number = scannner.nextInt();
-
-        while( number > 0) {
+        while(number > 0) {
             cont = cont + number;
             System.out.println("Digite um número inteiro POSITIVO:");
             number = scannner.nextInt();
@@ -81,18 +78,13 @@ public class Main {
         }
 
         System.out.println("A soma dos números inseridos é: " + (cont));
-        System.out.println("A média dos números inseridos é: " + (cont/i));*/
+        System.out.println("A média dos números inseridos é: " + (cont/i));
+    }
 
-
-        /*7 - Crie uma calculadora simples que permita ao usuário realizar operações de soma, subtração,
+    public static void operacoes(double a, double b){
+         /*7 - Crie uma calculadora simples que permita ao usuário realizar operações de soma, subtração,
         multiplicação e divisão entre dois números, utilizando um laço de repetição para continuar operando
-        até que o usuário decida sair.
-
-        System.out.println("Digite o PRIMEIRO número");
-        double a  = scannner.nextDouble();
-
-        System.out.println("Digite o SEGUNDO número");
-        double b  = scannner.nextDouble();
+        até que o usuário decida sair.*/
 
         System.out.println("Escolha uma opção: ");
         System.out.println("1 - Adição ");
@@ -128,11 +120,13 @@ public class Main {
             System.out.println("4 - Divisão ");
             System.out.println("5 - Sair ");
             option = scannner.nextInt();
-        }*/
+        }
+    }
 
-        /*8 - Implemente um jogo no qual o programa escolhe um número aleatório entre 1 e 100, e o
+    public static void joguinho(){
+         /*8 - Implemente um jogo no qual o programa escolhe um número aleatório entre 1 e 100, e o
         jogador deve tentar adivinhá-lo. O programa deve fornecer dicas do tipo "maior" ou "menor"
-        conforme necessário.
+        conforme necessário.*/
 
         Random random = new Random();
         int palpite = 0, numerodasorte = random.nextInt(10) + 1;
@@ -153,14 +147,13 @@ public class Main {
                     System.out.println("Tente um número maior");
                 }
             }
-        } */
+        }
+    }
 
-        /*9 -  Escreva um programa que converta a temperatura de Celsius para Fahrenheit ou vice-versa,
+    public static void converteTemp(double temp){
+          /*9 -  Escreva um programa que converta a temperatura de Celsius para Fahrenheit ou vice-versa,
         solicitando ao usuário qual conversão deseja fazer. O programa deve continuar executando até que o
-        usuário decida sair.
-
-        System.out.println("Digite o valor da temperatura: ");
-        double temp = scannner.nextDouble();
+        usuário decida sair.*/
 
         System.out.println("Escolha a opção para qual deseja converter a tempertaruta");
         System.out.println("1 - Celsius     ->  Fahrenheit");
@@ -187,11 +180,13 @@ public class Main {
             System.out.println("2 - Fahrenheit  ->  Celsius");
             System.out.println("3 - Sair ");
             option = scannner.nextInt();
-        }*/
+        }
+    }
 
-        /*10 - Desenvolva um programa que permita ao usuário inserir itens em uma lista de compras.
+    public static void comprarItens(){
+         /*10 - Desenvolva um programa que permita ao usuário inserir itens em uma lista de compras.
         O programa deve exibir a lista de compras atualizada após cada inserção e perguntar se o usuário
-        deseja adicionar mais itens. O programa deve continuar executando até que o usuário decida sair.
+        deseja adicionar mais itens. O programa deve continuar executando até que o usuário decida sair.*/
 
         String item;
         ArrayList<String> itens = new ArrayList<String>();
@@ -223,6 +218,44 @@ public class Main {
             System.out.println("2 - Consultar carrinho");
             System.out.println("3 - Sair");
             option = scannner.nextInt();
-        }*/
+        }
+    }
+    public static void main(String[] args) {
+
+        int num;
+        double number, a, b, temp;
+
+        //contagemRegressiva();
+
+        /*System.out.println("Digite um número: ");
+        number = scannner.nextDouble(); //considerando qualquer número, inclusive número reais.
+        tabuada(number);*/
+
+        //somaPares();
+
+        /*System.out.println("Digite um número: ");
+        num = scannner.nextInt();
+        numeroPrimo(num);*/
+
+        fibonacci();
+
+        /*System.out.println("Digite um número inteiro POSITIVO:");
+        num = scannner.nextInt();
+        mediaPositivos(num);*/
+
+        /*System.out.println("Digite o PRIMEIRO número");
+        a  = scannner.nextDouble();
+
+        System.out.println("Digite o SEGUNDO número");
+        b  = scannner.nextDouble();
+        operacoes(a,b);*/
+
+        //joguinho();
+
+        /*System.out.println("Digite o valor da temperatura: ");
+        temp = scannner.nextDouble();
+        converteTemp(temp);*/
+
+        //comprarItens();
     }
 }
